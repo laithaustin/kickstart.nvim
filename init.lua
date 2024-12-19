@@ -306,16 +306,13 @@ require('lazy').setup({
   -- keys can be used to configure plugin behavior/loading/etc.
   --
   -- Use `opts = {}` to force a plugin to be loaded.
-<<<<<<< Updated upstream
   --
-=======
   --:
   --  This is equivalent to:
   --    require('Comment').setup({})
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
->>>>>>> Stashed changes
 
   {
     'nvim-telescope/telescope-file-browser.nvim',
@@ -362,11 +359,7 @@ require('lazy').setup({
         -- set icon mappings to true if you have a Nerd Font
         mappings = vim.g.have_nerd_font,
         -- If you are using a Nerd Font: set icons.keys to an empty table which will use the
-<<<<<<< Updated upstream
-        -- default which-key.nvim defined Nerd Font icons, otherwise define a string table
-=======
         -- default whick-key.nvim defined Nerd Font icons, otherwise define a string table
->>>>>>> Stashed changes
         keys = vim.g.have_nerd_font and {} or {
           Up = '<Up> ',
           Down = '<Down> ',
@@ -554,15 +547,12 @@ require('lazy').setup({
       -- Useful status updates for LSP.
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { 'j-hui/fidget.nvim', opts = {} },
-<<<<<<< Updated upstream
 
       -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
-=======
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
       { 'folke/neodev.nvim', opts = {} },
->>>>>>> Stashed changes
     },
     config = function()
       -- Brief aside: **What is LSP?**
