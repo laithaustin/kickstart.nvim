@@ -102,7 +102,7 @@ vim.g.have_nerd_font = false
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -247,7 +247,7 @@ require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'xiyaowong/transparent.nvim',
   'github/copilot.vim',
-  --[[ {
+  {
     'yetone/avante.nvim',
     event = 'VeryLazy',
     lazy = false,
@@ -282,22 +282,22 @@ require('lazy').setup({
             use_absolute_path = true,
           },
         },
-      }, ]]
-      {
-        -- Make sure to set this up properly if you have lazy=true
-        'MeanderingProgrammer/render-markdown.nvim',
-        dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-        ---@module 'render-markdown'
-        ---@type render.md.UserConfig
-        opts = {
-          file_types = { 'markdown', 'Avante' },
-          markdown = {
-            fat_headline_lower_string = '▔',
-          },
-        },
-        ft = { 'markdown', 'Avante' },
+      },}, },
+  {
+    -- Make sure to set this up properly if you have lazy=true
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {
+      file_types = { 'markdown', 'Avante' },
+      markdown = {
+        fat_headline_lower_string = '▔',
       },
-    --},
+    },
+    ft = { 'markdown', 'Avante' },
+  },
+  --},
   --},
   -- See Commands section for default commands if you want to lazy load on them
   'ThePrimeagen/vim-be-good',
